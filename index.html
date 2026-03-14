@@ -20,7 +20,7 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
+background:#111827;
 color:white;
 }
 
@@ -31,15 +31,17 @@ position:fixed;
 width:100%;
 display:flex;
 justify-content:space-between;
-padding:20px 10%;
-background:rgba(0,0,0,0.3);
+padding:18px 10%;
+background:rgba(0,0,0,0.6);
 backdrop-filter:blur(10px);
+z-index:1000;
 }
 
 nav a{
 color:white;
 margin-left:20px;
 text-decoration:none;
+font-weight:500;
 }
 
 /* HERO */
@@ -51,11 +53,11 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(135deg,#2563eb,#9333ea);
+background:linear-gradient(135deg,#4f46e5,#06b6d4);
 }
 
 .hero h1{
-font-size:55px;
+font-size:58px;
 }
 
 .typing{
@@ -64,25 +66,43 @@ margin-top:10px;
 color:#e2e8f0;
 }
 
+/* BUTTON */
+
+.btn{
+margin-top:25px;
+padding:12px 28px;
+background:white;
+color:#111827;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
 /* SECTIONS */
 
 section{
-padding:80px 10%;
+padding:90px 10%;
 }
 
 h2{
-font-size:35px;
+font-size:36px;
 margin-bottom:30px;
 }
 
 /* GLASS CARD */
 
 .card{
-background:rgba(255,255,255,0.05);
+background:rgba(255,255,255,0.06);
 padding:30px;
 border-radius:15px;
-backdrop-filter:blur(10px);
+backdrop-filter:blur(12px);
 margin-bottom:25px;
+line-height:1.7;
 }
 
 /* SKILLS */
@@ -94,14 +114,14 @@ gap:25px;
 }
 
 .skill{
-background:#1e293b;
+background:#1f2937;
 padding:20px;
 border-radius:10px;
 }
 
 .progress{
 height:8px;
-background:#334155;
+background:#374151;
 margin-top:10px;
 border-radius:5px;
 }
@@ -109,7 +129,7 @@ border-radius:5px;
 .progress span{
 display:block;
 height:8px;
-background:#3b82f6;
+background:#38bdf8;
 border-radius:5px;
 }
 
@@ -122,7 +142,7 @@ gap:25px;
 }
 
 .project{
-background:#1e293b;
+background:#1f2937;
 padding:25px;
 border-radius:10px;
 transition:0.3s;
@@ -130,12 +150,13 @@ transition:0.3s;
 
 .project:hover{
 transform:translateY(-10px);
+background:#374151;
 }
 
 /* CONTACT */
 
 .contact a{
-color:#60a5fa;
+color:#38bdf8;
 text-decoration:none;
 }
 
@@ -145,6 +166,7 @@ footer{
 text-align:center;
 padding:30px;
 background:#020617;
+margin-top:50px;
 }
 
 </style>
@@ -154,7 +176,8 @@ background:#020617;
 <body>
 
 <nav>
-<div>Prashant</div>
+
+<div><b>Prashant</b></div>
 
 <div>
 <a href="#about">About</a>
@@ -173,6 +196,10 @@ background:#020617;
 
 <div class="typing" id="typing"></div>
 
+<a href="Prashant_Chaudhari_Resume.pdf" download class="btn">
+Download Resume
+</a>
+
 </div>
 
 <!-- ABOUT -->
@@ -183,15 +210,16 @@ background:#020617;
 
 <div class="card">
 
-Software Test Engineer with 4 years of experience in manual and automation testing of 
-web applications, desktop applications and mobile applications.
+Software Test Engineer with 4 years of experience in manual and automation testing of web applications, desktop applications, and mobile applications.
 
-Specialized in:
+Expert in:
 
-• Automation testing  
-• API testing  
-• BACnet protocol testing  
-• Python automation  
+• Automation Testing  
+• API Testing using Postman  
+• BACnet Protocol Testing  
+• Python Automation  
+
+Experienced working in Agile teams and collaborating with developers to deliver high-quality software solutions.
 
 </div>
 
@@ -207,458 +235,4 @@ Specialized in:
 
 <div class="skill">
 Python
-<div class="progress"><span style="width:85%"></span></div>
-</div>
-
-<div class="skill">
-Selenium
-<div class="progress"><span style="width:80%"></span></div>
-</div>
-
-<div class="skill">
-Postman API Testing
-<div class="progress"><span style="width:90%"></span></div>
-</div>
-
-<div class="skill">
-Robot Framework
-<div class="progress"><span style="width:75%"></span></div>
-</div>
-
-<div class="skill">
-SQL
-<div class="progress"><span style="width:70%"></span></div>
-</div>
-
-<div class="skill">
-Wireshark
-<div class="progress"><span style="width:65%"></span></div>
-</div>
-
-</div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="projects">
-
-<div class="project">
-<h3>WJ-1 & Boss Simulation</h3>
-<p>Desktop application used for BACnet device simulation in building automation systems.</p>
-</div>
-
-<div class="project">
-<h3>BeeSmart Application</h3>
-<p>Web and mobile platform managing honey collection from farmers and vendor distribution.</p>
-</div>
-
-<div class="project">
-<h3>Protocol Test Lab</h3>
-<p>BACnet protocol testing lab used for certification of automation devices.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact" class="contact">
-
-<h2>Contact</h2>
-
-<p>Email: p.chaudhari0111@gmail.com</p>
-<p>Phone: +91 8007632137</p>
-
-<p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/prashant-chaudhari-336498137">
-View Profile
-</a>
-</p>
-
-</section>
-
-<footer>
-
-© 2026 Prashant Chaudhari
-
-</footer>
-
-<!-- TYPING EFFECT -->
-
-<script>
-
-const text = [
-"Software Test Engineer",
-"Automation Tester",
-"API Testing Specialist",
-"Python Automation Developer"
-];
-
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
-
-(function type(){
-
-if(count === text.length){
-count = 0;
-}
-
-currentText = text[count];
-letter = currentText.slice(0, ++index);
-
-document.getElementById("typing").textContent = letter;
-
-if(letter.length === currentText.length){
-count++;
-index = 0;
-}
-
-setTimeout(type,120);
-
-})();
-
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Prashant Chaudhari | Test Engineer</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-/* NAVBAR */
-
-nav{
-position:fixed;
-width:100%;
-display:flex;
-justify-content:space-between;
-padding:20px 10%;
-background:rgba(0,0,0,0.3);
-backdrop-filter:blur(10px);
-}
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-}
-
-/* HERO */
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(135deg,#2563eb,#9333ea);
-}
-
-.hero h1{
-font-size:55px;
-}
-
-.typing{
-font-size:22px;
-margin-top:10px;
-color:#e2e8f0;
-}
-
-/* SECTIONS */
-
-section{
-padding:80px 10%;
-}
-
-h2{
-font-size:35px;
-margin-bottom:30px;
-}
-
-/* GLASS CARD */
-
-.card{
-background:rgba(255,255,255,0.05);
-padding:30px;
-border-radius:15px;
-backdrop-filter:blur(10px);
-margin-bottom:25px;
-}
-
-/* SKILLS */
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:25px;
-}
-
-.skill{
-background:#1e293b;
-padding:20px;
-border-radius:10px;
-}
-
-.progress{
-height:8px;
-background:#334155;
-margin-top:10px;
-border-radius:5px;
-}
-
-.progress span{
-display:block;
-height:8px;
-background:#3b82f6;
-border-radius:5px;
-}
-
-/* PROJECTS */
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.project{
-background:#1e293b;
-padding:25px;
-border-radius:10px;
-transition:0.3s;
-}
-
-.project:hover{
-transform:translateY(-10px);
-}
-
-/* CONTACT */
-
-.contact a{
-color:#60a5fa;
-text-decoration:none;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:30px;
-background:#020617;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<nav>
-<div>Prashant</div>
-
-<div>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
-
-</nav>
-
-<!-- HERO -->
-
-<div class="hero">
-
-<h1>Prashant Chaudhari</h1>
-
-<div class="typing" id="typing"></div>
-
-</div>
-
-<!-- ABOUT -->
-
-<section id="about">
-
-<h2>About Me</h2>
-
-<div class="card">
-
-Software Test Engineer with 4 years of experience in manual and automation testing of 
-web applications, desktop applications and mobile applications.
-
-Specialized in:
-
-• Automation testing  
-• API testing  
-• BACnet protocol testing  
-• Python automation  
-
-</div>
-
-</section>
-
-<!-- SKILLS -->
-
-<section id="skills">
-
-<h2>Technical Skills</h2>
-
-<div class="skills">
-
-<div class="skill">
-Python
-<div class="progress"><span style="width:85%"></span></div>
-</div>
-
-<div class="skill">
-Selenium
-<div class="progress"><span style="width:80%"></span></div>
-</div>
-
-<div class="skill">
-Postman API Testing
-<div class="progress"><span style="width:90%"></span></div>
-</div>
-
-<div class="skill">
-Robot Framework
-<div class="progress"><span style="width:75%"></span></div>
-</div>
-
-<div class="skill">
-SQL
-<div class="progress"><span style="width:70%"></span></div>
-</div>
-
-<div class="skill">
-Wireshark
-<div class="progress"><span style="width:65%"></span></div>
-</div>
-
-</div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="projects">
-
-<div class="project">
-<h3>WJ-1 & Boss Simulation</h3>
-<p>Desktop application used for BACnet device simulation in building automation systems.</p>
-</div>
-
-<div class="project">
-<h3>BeeSmart Application</h3>
-<p>Web and mobile platform managing honey collection from farmers and vendor distribution.</p>
-</div>
-
-<div class="project">
-<h3>Protocol Test Lab</h3>
-<p>BACnet protocol testing lab used for certification of automation devices.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact" class="contact">
-
-<h2>Contact</h2>
-
-<p>Email: p.chaudhari0111@gmail.com</p>
-<p>Phone: +91 8007632137</p>
-
-<p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/prashant-chaudhari-336498137">
-View Profile
-</a>
-</p>
-
-</section>
-
-<footer>
-
-© 2026 Prashant Chaudhari
-
-</footer>
-
-<!-- TYPING EFFECT -->
-
-<script>
-
-const text = [
-"Software Test Engineer",
-"Automation Tester",
-"API Testing Specialist",
-"Python Automation Developer"
-];
-
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
-
-(function type(){
-
-if(count === text.length){
-count = 0;
-}
-
-currentText = text[count];
-letter = currentText.slice(0, ++index);
-
-document.getElementById("typing").textContent = letter;
-
-if(letter.length === currentText.length){
-count++;
-index = 0;
-}
-
-setTimeout(type,120);
-
-})();
-
-</script>
-
-</body>
-</html>
+<div class="progress"><span style="width:85%"></
